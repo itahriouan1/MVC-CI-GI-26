@@ -1,0 +1,17 @@
+{
+    "name": "hp/app1",
+    "autoload": {
+        "psr-4": {
+            "App1\\Entity\\": "src/Entity/",
+            "App1\\Repository\\": "src/Repository/",
+            "Core\\DB\\": "Core/DB/"
+        }
+    },
+    "authors": [
+        {
+            "name": "zakaria itahriouan",
+            "email": "z.itahriouan@umi.ac.ma"
+        }
+    ],
+    "require": {}
+}
