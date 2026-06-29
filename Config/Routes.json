@@ -1,0 +1,14 @@
+[
+    {
+        "action": "/",
+        "Controller": "PersonneController::Afficher"
+    },
+    {
+        "action": "afficher_personnes",
+        "Controller": "PersonneController::Afficher"
+    },
+    {
+        "action": "ajouter_personne",
+        "Controller": "PersonneController::Ajouter"
+    }
+]

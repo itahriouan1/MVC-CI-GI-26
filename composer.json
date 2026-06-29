@@ -4,7 +4,9 @@
         "psr-4": {
             "App1\\Entity\\": "src/Entity/",
             "App1\\Repository\\": "src/Repository/",
-            "Core\\DB\\": "Core/DB/"
+            "App1\\Controller\\": "src/Controller/",
+            "Core\\DB\\": "Core/DB/",
+            "Core\\Routing\\": "Core/Routing/"
         }
     },
     "authors": [
