@@ -6,6 +6,7 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Core\\View\\' => array($baseDir . '/Core/View'),
     'Core\\Routing\\' => array($baseDir . '/Core/Routing'),
     'Core\\DB\\' => array($baseDir . '/Core/DB'),
     'App1\\Repository\\' => array($baseDir . '/src/Repository'),

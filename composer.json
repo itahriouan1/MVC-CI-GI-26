@@ -6,7 +6,8 @@
             "App1\\Repository\\": "src/Repository/",
             "App1\\Controller\\": "src/Controller/",
             "Core\\DB\\": "Core/DB/",
-            "Core\\Routing\\": "Core/Routing/"
+            "Core\\Routing\\": "Core/Routing/",
+            "Core\\View\\": "Core/View/"
         }
     },
     "authors": [

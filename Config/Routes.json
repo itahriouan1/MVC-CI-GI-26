@@ -1,7 +1,7 @@
 [
     {
         "action": "/",
-        "Controller": "PersonneController::Afficher"
+        "Controller": "DefaultController::index"
     },
     {
         "action": "afficher_personnes",

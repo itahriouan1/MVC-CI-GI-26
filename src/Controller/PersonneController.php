@@ -4,6 +4,7 @@ namespace App1\Controller;
 
 use App1\Entity\Personne;
 use App1\Repository\PersonneRepository;
+use Core\View\View;
 
 class PersonneController {
     protected PersonneRepository $personneRepository;
@@ -35,25 +36,9 @@ class PersonneController {
     public function Afficher(){
         $personneRepository = $this->personneRepository;
         $personnes = $personneRepository->find();
-        $html = "<table>";
-        foreach($personnes as $personne){
-        $html .= "<tr>";
-        $html .= "<td>";
-        $html .= $personne->getId();
-        $html .= "</td>";
-        $html .= "<td>";
-        $html .= $personne->getNom();
-        $html .= "</td>";
-        $html .= "<td>";
-        $html .= $personne->getPrenom();
-        $html .= "</td>";
-        $html .= "<td>";
-        $html .= $personne->getEmail();
-        $html .= "</td>";
-        $html .= "</tr>";
-        }
-        $html .= "</table>";
-        echo $html;
+        $view = new View();
+        $view->render("personne/afficher",["personnes"=>$personnes]);
+       
 
     }
 }
